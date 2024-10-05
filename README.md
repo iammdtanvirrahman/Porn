@@ -1,17 +1,24 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>My Book Reader</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>My Book Title</h1>
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f5f5f5;
+  margin: 20px;
+  padding: 20px;
+}
 
-  <p>This is the first paragraph of my book. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
 
-  <h2>Chapter 1: Introduction</h2>
+h2 {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
 
-  <p>This is the first chapter of my book. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-  </body>
-</html>
+p {
+  margin-bottom: 20px;
+}
