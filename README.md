@@ -1,24 +1,26 @@
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-  background-color: #f5f5f5;
-  margin: 20px;
-  padding: 20px;
-}
+const express = require('express');
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
 
-h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
+const app = express();
+const port = process.env.PORT || 3000;
 
-h2 {
-  font-size: 20px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
+// Connect to MongoDB
+mongoose.connect('mongodb://localhost:27017/audiostories', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
 
-p {
-  margin-bottom: 20px;
-}
+// Middleware
+app.use(bodyParser.json());
+
+// Routes
+app.get('/', (req, res) => {
+  res.send('Welcome to the Audio Stories API');
+});
+
+// Define routes for user registration, login, story upload, etc.
+
+app.listen(port, () => {
+  console.log(`Server listening on port ${port}`);
+});
